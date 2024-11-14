@@ -1,0 +1,21 @@
+*
+{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: beige;
+}
+
+.heading
+{
+
+    padding:30px;
+    margin-bottom: 10px;
+    background-color: antiquewhite;
+}
+.heading h1
+{
+    background-color: white;
+}
+.heading h3
+{
+    background-color: white;
+}
