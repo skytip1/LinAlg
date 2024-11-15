@@ -52,6 +52,14 @@
             </p>
             <iframe display="flexbox"src="https://www.desmos.com/calculator/ywtmnennob?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
             <p>
+            Like wise we can also add vectors. This is pretty simple as we just add the numbers left to right on each column. This has the effect of putting the tip
+            of the vector on the other vector.
+            $$\vec{v} = \begin{bmatrix} v_1 \\ v_2 \\ v_3 \end{bmatrix}$$
+            $$\vec{u} = \begin{bmatrix} u_1 \\ u_2 \\ u_3 \end{bmatrix}$$
+            $$\vec{v} + \vec{u} = \begin{bmatrix} v_1+u_1 \\ v_2 + u_2 \\ v_3 + u_3 \end{bmatrix} $$
+            <iframe src="https://www.desmos.com/calculator/8srty3du1s?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
+            </p>
+            <p>
                 Now one vector is cool but what's even cooler is multiple vectors.
                 This is where the beauty of Linear alegbra shines because we can represent 
                 as many vectors as we want, even an infinite amount! 
@@ -71,7 +79,27 @@
                 $$ax\begin{bmatrix} -1 \\ 1 \\ 2 \end{bmatrix} +by\begin{bmatrix} -1 \\ -1 \\ -3 \end{bmatrix} =\begin{bmatrix} -1/2 \\ 1/9 \\ 1/6 \end{bmatrix}$$
                 You may notice these are just equations of a line! This is where the name "Linear Algebra" comes from as 
                 we are just manipulating a bunch of linear equations.
-
+                In basic algebra we can solve an equation by looking where a line intersects. For example the equation
+                $$x - 1 = 0 $$ we can look at the line $$y = x - 1$$ and find when it crosses the orgin. (since this is where y = 0). 
+                </p>
+                <div class="video" align="center">
+                    <iframe src="https://www.desmos.com/calculator/mjf1taqpty?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
+                </div>
+                <p>
+                Another way to think about this equation is "what numbers can I scale my vectors by so that the tip of there sum is equal to the resultant point."
+                If you watched the 3Blue1Brown video you may know that he talks about scailing the basis vectors <strong><em>i</em></strong> and <strong><em>j</em></strong>  and we can represent any other vector by just scailing these two vectors.
+                like-wise we can do the same for our linear equations.
+                Going back to our example, 
+                $$y = x-1 = 0$$
+                we can rewrite as two seperate equations
+                $$ y - x = -1$$
+                $$ y = 0 $$
+                and then we can write these as vectors.
+                $$ x\begin{bmatrix} -1 \\ 0 \end{bmatrix} + y \begin{bmatrix} 1 \\ 1 \end{bmatrix} = \begin{bmatrix} -1 \\ 0 \end{bmatrix}$$ 
+                effectively what we've done is made our new basis vectors [-1, 0] and [1, 1] and we are looking at what <em><strong>Combination</strong></em>
+                of these vectors will give us the vector [-1, 0]. We can then make the conclusion (geometrically, or algebraically if you notice we are just looking for the first basis vector) that our solution
+                (x, y) must be equal to (1,0).
+                </p>
             </p>
             
             
