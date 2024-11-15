@@ -1,14 +1,21 @@
 *
 {
     font-family: 'Courier New', Courier, monospace;
-    background-color: beige;
+    background-color: antiquewhite;
+}
+.paragraph p
+{
+    
+    padding:30px;
+    background-color: white;
+    text-align: center;
 }
 
 .heading
 {
-
+    width: 50%;
+    display: inline-block;
     padding:30px;
-    margin-bottom: 10px;
     background-color: antiquewhite;
 }
 .heading h1
@@ -18,4 +25,38 @@
 .heading h3
 {
     background-color: white;
+}
+.table-of-contents li
+{
+    
+    padding:10px;
+    background-color: blanchedalmond;
+}
+.table-of-contents a:hover
+{
+    padding: 10px;
+    font-size: large;
+    color:red;
+    font-style: italic;
+}
+.index-heading
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-right:40%;
+    background-color: paleturquoise;
+}
+a.button {
+    padding: 1px 6px;
+    border: 1px outset buttonborder;
+    border-radius: 3px;
+    color: buttontext;
+    background-color: buttonface;
+    text-decoration: none;
+}
+.video
+{
+    display: flexbox;
 }
