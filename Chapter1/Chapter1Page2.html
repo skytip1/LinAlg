@@ -31,8 +31,60 @@
         <div class="video" align="center">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/kYB8IZa5AuE?si=IGWJxAOy9cITgPga" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
-        <paragraph>
+        <div class = "paragraph">
+            <p>
+            As you saw in the video a matrix is basically a way to "Transform" our vector space to
+            accomidate for our unit vectors.
+            Going back to our previous example:
+            $$ x\begin{bmatrix} -1 \\ 0 \end{bmatrix} + y \begin{bmatrix} 1 \\ 1 \end{bmatrix} = \begin{bmatrix} -1 \\ 0 \end{bmatrix}$$
+            I said that we made our new "basis" vectors the following $$\begin{bmatrix} -1 \\ 0 \end{bmatrix} , \begin{bmatrix} 1 \\ 1 \end{bmatrix} $$
+            Another way we can think of this is by representing these vectors as a matrix and the x y as a vector that takes any combination of x and y and "spans" our new space that warps to our unit vector placement. Or in other words:
+            $$ \begin{bmatrix} -1 & 1 \\ 0 & 1 \end{bmatrix}\begin{bmatrix} x\\y \end{bmatrix} = \begin{bmatrix} -1 \\ 0 \end{bmatrix}$$
+            This following Animation animations provides a more geometric view of what is going on.
+            </p>
+            </div>
+            <div class="video" align = "center">
+            <video width="400" height="200" controls autoplay muted>
+                <source src="../Chapter1/static/mathVisualization1.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class ="paragraph">
+                <p>
+                    This visualization shows us warping the vector space to our new basis vectors or matrix. (the blue lines representing our new space)
+                    and the black ones representing our old cartesian coordinates.
+                    The main point is we used a matrix to represent our basis vectors.
+                    
+                    The equation 
+                    $$ \begin{bmatrix} -1 & 1 \\ 0 & 1 \end{bmatrix}\begin{bmatrix} x\\y \end{bmatrix} = \begin{bmatrix} -1 \\ 0 \end{bmatrix}$$
+                    Asks us, "What vector [x, y] transforms under the given transformation such that it becomes the vector [-1,0]?"
+                    and as we saw in the animation that is clearly the basis vector or <strong>i</strong> (the green arrow).
+                    But what if we had a more complicated transformation? 
+                    take 
+                    $$\begin{bmatrix} -3 & 2 \\ 3 & 7 \end{bmatrix}$$
+                    Again the following provides what this transformaion would look like.
+                </p>
+            </div>
+            <div class="video" align = "center">
+                <video width="400" height="200" controls autoplay muted>
+                    <source src="../Chapter1/static/mathVisualization2.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="paragraph">
+                    <p>
+                        And now imagine we want to find a certain vector [x, y] such that 
+                        after the transformation lands on lets say [1, 2],
+                        or in other words 
+                        $$\begin{bmatrix} -3 & 2 \\ 3 & 6 \end{bmatrix}\begin{bmatrix} x\\y \end{bmatrix} = \begin{bmatrix} 1 \\ 2 \end{bmatrix}$$
+                        There are infinite vectors in this space, how can we find the right one? Well we can recognize that this matrix must correspond to linear equations
+                        right? I mean we went from a system of linear equations, to a combination of two vectors to a matrix so we should be able to go backwards right?
+                        Yes you can! 
+                        this linear equation simply corresponds to 
+                        $$-3x + 2y$$
+                        $$3x + 6y$$
+                        Make sure you understand how we reached this conclusion.
+                        
 
-        </paragraph>
-</body>
+                    </p>
+                </div>
+            </body>
 </html>
